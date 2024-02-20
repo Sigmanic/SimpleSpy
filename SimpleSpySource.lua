@@ -321,12 +321,12 @@ end
 
 local synv3 = false
 
-if syn and identifyexecutor then
+--[[if syn and identifyexecutor then
     local _, version = identifyexecutor()
     if (version and version:sub(1, 2) == 'v3') then
         synv3 = true
     end
-end
+end]]
 
 xpcall(function()
     if isfile and readfile and isfolder and makefolder then
